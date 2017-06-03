@@ -19,3 +19,7 @@ $.ajax({
 }).done(function(response){
 	console.log(response);
 });
+
+$(".search").on("click"), function(){
+	alert("I'm Searching")
+}
