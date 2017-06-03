@@ -14,19 +14,35 @@ var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key
 
 //ajax call to api
 
-function runQuery (queryUrl){
+$.ajax({
+	url: queryUrl,
+	method: "GET"
+}).done(function(response){
+	console.log(response);
 
-	$.ajax({
-		url: queryUrl,
-		method: "GET"
-	}).done(function(response){
-		console.log(response);
-	});
+	var results = response.docs;
+	for (var i = 0; i < results.length; i++){
+		//plug in article div
 
-	$(".search").on("click"), function(){
-		alert("I'm Searching")
 	}
 
 
-}
+});
 
+// use this later
+// function runQuery (queryUrl){
+
+// 	$.ajax({
+// 		url: queryUrl,
+// 		method: "GET"
+// 	}).done(function(response){
+// 		console.log(response);
+// 	});
+
+// 	$(".search").on("click", function(){
+// 		alert("I'm Searching")
+// 	});
+
+
+// }
+// uncomment latter
