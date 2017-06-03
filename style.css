@@ -11,5 +11,9 @@
 form {
 	border: solid 1px black;
 	padding: 10px;
-	border-radius: 1%;
+	margin-bottom: 20px;
+}
+
+.rounded {
+  border-radius: 10px;
 }
