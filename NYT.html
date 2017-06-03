@@ -50,7 +50,7 @@
       <form id="form" class="rounded">
   <div class="form-group">
     <label for="exampleInputEmail1">Search Term:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     
   </div>
   <div class="form-group">
@@ -77,14 +77,18 @@
 
 
 
-  <button id="search" class="btn btn-primary search">Search</button>
-    <button class="btn btn-primary clear">Clear Results</button>
+  <button value="submit" id="search" class="btn btn-primary search">Search</button>
+  <button value="submit" class="btn btn-primary clear">Clear Results</button>
 
     <script>
 document.getElementById("search").onclick = function() {myFunction()};
 
 function myFunction() {
-    alert( "YOU CLICKED ME!");
+  document.getElementById("search").submit();
+  var searchTerm = document.getElementById("search").submit();
+  console.log(searchTerm);
+
+
 }
 </script>
   

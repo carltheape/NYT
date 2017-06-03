@@ -24,17 +24,18 @@ $.ajax({
 	for (var i = 0; i < results.length; i++){
 		//plug in article div
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
 };
 
 
-=======
-	}
+// =======
+	
 
 
 });
->>>>>>> 774cb83de42e3c810ee8b51aa8b31fde9e3e3e50
+
+// >>>>>>> 774cb83de42e3c810ee8b51aa8b31fde9e3e3e50
 
 // use this later
 // function runQuery (queryUrl){
